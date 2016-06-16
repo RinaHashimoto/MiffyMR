@@ -2,12 +2,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <style>
-            title{font-size: 30pt; font-synthesis:weight; color: magenta;}
-            h1{font-size: 20pt; font-synthesis: weight; color:magenta;}
-            body{background: ivory}
+       <style>
+            title{font-size: 30pt; font-synthesis:weight;}
+            h1{font-size: 20pt; font-synthesis: weight; color:#660000;}
+            body{background: ivory;
+            background-image: url("./pictures/miffy.png");
+            background-repeat: repeat-x;
+            background-position: left bottom;
+            background-size: 450px 148px}
     </style>
-        <title>LinkDataの削除</title>
+        <title>データの削除</title>
     <script type="text/javascript" src="lib.js"></script>
         <script type="text/javascript">
         <!--
@@ -27,8 +31,25 @@
         }
         //-->
         </script>
+        <script type="text/javascript">
+<!--
+
+function changeSize(fontSize) { 
+   document.getElementById("content").style.fontSize=fontSize; 
+}
+function changeColor(color) { 
+   document.getElementById("content").style.color=color; 
+}
+
+// -->
+</script>
     </head>
     <body onload="initial();">
+    <div id="content">
+    <h3>文字サイズ</h3>
+<a href="javascript:void(0)" onclick="changeSize('8pt')">小</a> | 
+<a href="javascript:void(0)" onclick="changeSize('12pt')">中</a> | 
+<a href="javascript:void(0)" onclick="changeSize('30pt')">大</a>
         <h1>データの削除</h1>
         <div>以下のデータを削除しますか？</div>
         <div id="data"></div>
@@ -36,5 +57,18 @@
             <input type="hidden" id="id" name="id">
             <input type="submit" value="削除">
         </form>
+        <p><a href="/private.jsp">戻る</a></p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><br><br><br>
+        <br>
+        </div>
         </body>
 </html>

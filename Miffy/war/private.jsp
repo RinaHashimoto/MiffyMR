@@ -9,10 +9,26 @@ User user = (User)session.getAttribute("user");
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <style>
-            title{font-size: 30pt; font-synthesis:weight; color: magenta;}
-            h1{font-size: 20pt; font-synthesis: weight; color:magenta;}
-            body{background: ivory}
+    <script type="text/javascript">
+<!--
+
+function changeSize(fontSize) { 
+   document.getElementById("content").style.fontSize=fontSize; 
+}
+function changeColor(color) { 
+   document.getElementById("content").style.color=color; 
+}
+
+// -->
+</script>
+   <style>
+            title{font-size: 30pt; font-synthesis:weight;}
+            h1{font-size: 20pt; font-synthesis: weight; color:#660000;}
+            body{background: ivory;
+            background-image: url("./pictures/miffy.png");
+            background-repeat: repeat-x;
+            background-position: left bottom;
+            background-size: 450px 148px}
     </style>
     <title>＜・x・＞miffy＜・x・＞</title>
     <script type="text/javascript" src="lib.js"></script>
@@ -40,6 +56,11 @@ User user = (User)session.getAttribute("user");
         </script>
   </head>
   <body onload="getData(null);">
+  <div id="content">
+    <h3>文字サイズ</h3>
+<a href="javascript:void(0)" onclick="changeSize('8pt')">小</a> | 
+<a href="javascript:void(0)" onclick="changeSize('12pt')">中</a> | 
+<a href="javascript:void(0)" onclick="changeSize('30pt')">大</a>
     <h1>焼肉@渋谷 6/6 18:00〜</h1>
      
     <table id="datatable" border="1">
@@ -50,5 +71,8 @@ User user = (User)session.getAttribute("user");
     <br>
     <div><a href="add.html">参加する！</a></div>
     <a href="/logout">Logout</a>
+    <p><a href="/private.jsp">再読み込み</a></p>
+    <br>
+        </div>
   </body>
 </html>
