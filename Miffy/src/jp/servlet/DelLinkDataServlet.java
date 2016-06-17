@@ -31,6 +31,6 @@ public class DelLinkDataServlet extends HttpServlet {
         LinkData data = (LinkData)manager.getObjectById(LinkData.class,id);
         manager.deletePersistent(data);
         manager.close();
-        resp.sendRedirect("/index.html");
+        resp.sendRedirect("/private.jsp");
     }
 }

@@ -1,15 +1,54 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
     "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-    <head>
-        <meta http-equiv="Content-Type"
-            content="text/html; charset=utf-8">
-        <title>Login Page</title>
-    </head>
-    <body>
-        <h1>Login</h1>
-        <div>ログインしてください。</div>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+            title{font-size: 30pt; font-synthesis:weight;}
+            h1{font-size: 20pt; font-synthesis: weight; color:#660000;}
+            body{background: ivory;
+            background-image: url("./pictures/miffy.png");
+            background-repeat: repeat-x;
+            background-position: left bottom;
+            background-size: 450px 148px}
+    </style> 
+    <script type="text/javascript">
+<!--
+
+function changeSize(fontSize) { 
+   document.getElementById("content").style.fontSize=fontSize; 
+}
+function changeColor(color) { 
+   document.getElementById("content").style.color=color; 
+}
+
+// -->
+</script>
+<title>Login Page</title>
+</head>
+<body>
+<div id="content">
+    <h3>文字サイズ</h3>
+<a href="javascript:void(0)" onclick="changeSize('8pt')">小</a> | 
+<a href="javascript:void(0)" onclick="changeSize('12pt')">中</a> | 
+<a href="javascript:void(0)" onclick="changeSize('30pt')">大</a>
+	<h1>Login</h1>
+	<div>Googleアカウントを持っている方はログインしてください。</div>
+	<div>持っていない方は新規登録をしてからご利用ください。</div>
+	<br>
+	<p><a href="/private.jsp">ログイン／新規登録</a><br></p>
+	<p><a href="/public.html" target="_blank">新規登録のやり方</a></p>
+	<br>
         <br>
-        <a href="/private.jsp">ログイン</a>
-    </body>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><br><br><br>
+        <br>
+        </div>
+</body>
 </html>
